@@ -26,11 +26,12 @@ function percentage() {
 }
 
 function greeting() {
-    let firstName = 'Carlos';
+    const firstName = 'Carlos';
     const lastName = "Stevenson";
+    const fullName = firstName + " " + lastName;
     const currentYear = 2025;
     const birthYear = 2002;
-    const greeting = "Hello, I am ${firstName}."
+    const greeting = "Hello, I am " + fullName + "."
     console.log(greeting)
 }
 

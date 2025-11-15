@@ -1,0 +1,32 @@
+
+@font-face {
+    font-family: "Windows Regular";
+    src:
+        local("Windows-Regular"),
+        url("Windows Regular.ttf"),
+}
+
+body {
+    font-family: "Windows Regular";
+    background-color: rgb(55, 161, 161);
+    color:white;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+p {
+    font-size: 25px;
+}
+
+.flex {
+    display: flex;
+}
+
+.center {
+    justify-content: center;
+}
+
+.mainText {
+    font-size: 50px;
+}
+
