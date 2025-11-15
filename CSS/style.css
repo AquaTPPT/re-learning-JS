@@ -5,17 +5,83 @@
         local("Windows-Regular"),
         url("Windows Regular.ttf"),
 }
+@font-face {
+    font-family: "Consolas";
+    src:
+        local("Consolas"),
+        url("consolas.ttf"),
+}
 
 body {
     font-family: "Windows Regular";
     background-color: rgb(55, 161, 161);
     color:white;
-    margin-left: 5%;
-    margin-right: 5%;
 }
 
-p {
+.normal-text {
     font-size: 25px;
+    white-space: wrap;
+}
+
+.body-text {
+    margin-left: 25%;
+    margin-right:10%
+}
+
+.sidebar {
+    width:25%;
+    background-color: #6c6c6c;
+    position: fixed;
+    width: 15%;
+    height: 100%;
+    margin-left: -8px;
+    margin-top: -8px;
+}
+
+.sidebar-text {
+    padding-left: 15%;
+    margin-top:20%;
+    height:100%;
+}
+
+.sidebar-links {
+    margin-top:20px;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+.not-current-page {
+    color:white;
+    text-decoration: none;
+}
+
+.code {
+    background-color:#3a3a3a;
+    border-radius: 15px;
+    color:rgb(240, 240, 240);
+    padding:15px;
+    padding-left:20px;
+    font-family: "consolas";
+    font-size: 17px;
+}
+.pink {
+    color:rgb(255, 112, 136);
+}
+
+.purple {
+    color:#d8aacb;
+}
+
+.orange {
+    color: orange;
+}
+
+.blue {
+    color:lightskyblue;
+}
+.current-page {
+    color:white;
+    text-decoration: underline;
 }
 
 .flex {

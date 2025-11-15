@@ -1,22 +1,4 @@
-/* function camelize(str) {
-    let camelize = str.split("-")
-    console.log(camelize)
-    for (let capitalizedWords of camelize) {
-        capitalizedWords = camelize.charCodeAt(0).slice(1);
-        console.log(capitalizedWords)
-    }
 
-}
-camelize("of-me-in-the-man");
-
-function test(string) {
-    let upperCase = string.charAt(0).toUpperCase();
-    let slicedWord = string.slice(1);
-    let finalWord = upperCase + slicedWord;
-    console.log(finalWord)
-}
-
-test("hello") */
 
 function styles() {
 
@@ -45,11 +27,53 @@ function sumInput() {
    
    while (true) {
     let value = prompt("Numbers, Please!");
-    numbers = [value]
-    if (value == null) {
-       break
+    numbers.push(+value);
+    /*this next part can be written in 2 ways: if...else statements or if... || statements.
+    I'm going to write it in the if...else way as a comment fo practicing purposes. */
+   if (value == null || !isFinite(value) || value == '') {
+    numbers.pop()
+    break
    }
 }
+   let sum = 0;
+   for (let number of numbers) {
+    sum += number;   
+    
+   }
+   
+   return sum
+
 }
 
-// sumInput()
+// alert(sumInput())
+
+//exercises for array methods:
+
+function camelize(str) {
+    let camelize = str.split("-").map((word,index) => {
+        if (index == 0) {
+            return word
+        }
+        else {
+            return word[0].toUpperCase() + word.slice(1)
+        } 
+    }
+    )
+    .join('')
+    console.log(camelize)
+
+}
+
+// camelize("of-me-in-the-man");
+let array = [5,3,8,1];
+
+function filterRange(array,value1,value2) {
+    return array.filter(number => value1 <= number && value2 >= number)
+}
+
+
+let filtered = filterRange(array,1,4)
+
+console.log(filterRange(array,1,4))
+// word = 'hey'
+// test = word[0].toUpperCase() + word.slice(1)
