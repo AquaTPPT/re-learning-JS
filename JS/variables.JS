@@ -1,6 +1,6 @@
 // console.log("hello, World!");
 
-let age = 11;
+/* let age = 11;
 console.log(age);
 
 age = 54;
@@ -9,7 +9,7 @@ console.log(age);
 pi = 3.14 // ??
 console.log(pi)
 
-console.log(123 + 17);
+console.log(123 + 17); */
 
 // adding functions now
 
@@ -25,4 +25,13 @@ function percentage() {
     console.log(number * percentage);
 }
 
-percentage()
+function greeting() {
+    let firstName = 'Carlos';
+    const lastName = "Stevenson";
+    const currentYear = 2025;
+    const birthYear = 2002;
+    const greeting = "Hello, I am ${firstName}."
+    console.log(greeting)
+}
+
+greeting()
