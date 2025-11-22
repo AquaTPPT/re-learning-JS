@@ -16,4 +16,17 @@ div.appendChild(but);
 
 
 const butCode = document.querySelector("#helloWorld");
-butCode.onclick = () => alert("hello World!");
+butCode.onclick = () => alert("hello World! 2");
+
+const button3 = document.createElement("button");
+button3.addEventListener("click", () => alert("Hello, World! 3"));
+button3.textContent = "I swear to god, you have to click me right now..."
+div.appendChild(button3);
+
+btn.addEventListener("click", function (e) {
+  console.log(e.target);
+});
+
+btn.addEventListener("click", function (e) {
+  e.target.style.background = "blue";
+});
