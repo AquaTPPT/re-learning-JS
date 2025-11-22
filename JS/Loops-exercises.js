@@ -65,15 +65,70 @@ function camelize(str) {
 }
 
 // camelize("of-me-in-the-man");
+
 let array = [5,3,8,1];
 
 function filterRange(array,value1,value2) {
-    return array.filter(number => value1 <= number && value2 >= number)
+    return filtered = array.filter(number => value1 <= number && value2 >= number)
 }
 
+// let filtered = filterRange(array,1,4)
 
-let filtered = filterRange(array,1,4)
+// console.log(filterRange(array,1,4))
 
-console.log(filterRange(array,1,4))
-// word = 'hey'
-// test = word[0].toUpperCase() + word.slice(1)
+function filterRangeInPlace(arr, a, b) {
+
+  for (let i = 0; i < arr.length; i++) {
+    let val = arr[i];
+    if (val < a || val > b) {
+      arr.splice(i, 1);
+      i--;
+    }
+  }
+
+}
+
+// filterRangeInPlace(arr, 1, 4); ---- JS website solution
+
+function invertArray(arr) {
+    return arr.reverse();
+}
+
+let arr = [5, 2, 1, -10, 8];
+
+function sort(arr) {
+
+    arr.sort();
+    arr.reverse();
+    return arr
+    
+}
+
+let courses = ["HTML", "CSS", "JavaScript"];
+
+let sorted = copySorted(courses);
+
+function copySorted(arr) {
+    let sorted = arr.concat();
+    sorted.sort();
+    return sorted
+}
+
+// console.log(sorted);
+// console.log(courses);
+
+// arr.sort((a,b) => a - b)
+// console.log(sort(arr))
+// console.log(invertArray(array))
+
+function shuffle(arr) {
+    
+    for (i = 0; i < arr.length - 1; i++) {
+        let random = Math.floor(Math.random() * arr.length)
+        arr[i] = arr[random]
+    }
+    
+    return arr;
+}
+
+console.log(shuffle(arr))

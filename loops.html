@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./CSS/style.css">
-    <script src="./JS/Loops-exercises.js"></script>
+    <script src="./JS/Loops-exercises.js" defer></script>
 </head>
 <body>
     <div class="flex">
@@ -39,6 +39,13 @@
                 <p> <span class="pink">if</span><span class="purple"> (</span>value <span class="pink"> == </span><span class="blue">null</span> <span class="pink">|| !</span><span class="blue">isFinite(</span>value<span class="blue">)</span><span class="pink"> || </span>value<span class="pink"> == </span><span class="blue">''</span><span class="purple">) {</span> <br> <br><span class="pink"> break </span><br> <br><span class="purple">}</span></p>
             </div>
             <p>But if you check the code, you'll see that it's written in yet another way. That is because in both of these ways, the array will still contain the final value, since no matter what value it is, it'll still push the value. Now, with the way it is written, if the values turn into strings or anything other than a number, it'll delete that value before continuing. the difference in power that this used is completely negligible.</p>
+            <p>There is yet another thing though: In the command "<span class= "purple">sort</span><span class="orange">()</span>", there are also 2 ways of making this one bit: <br> After checking Stack Overflow, it was mentioned that you could make it with both the commands "sort" and "reverse, since "sort" sorts the numbers in ascending order, and "reverse" inverts the array order.</p>
+            <p>However, this is NOT how the exercise solution does.</p>
+            <p>instead, it shows the following:</p>
+            <div class="code">
+                <p><span class="pink">let</span>  arr<span class="pink"> =</span><span class="blue"> [5</span>,<span class="blue"> 2</span>,<span class="blue"> 1</span>, <span class="pink">-</span><span class="blue">10</span>,<span class="blue"> 8]</span> ;<br><br>arr.<span class="purple">sort</span><span class="blue">(</span><span class="orange">(a </span>,<span class="orange"> b)</span><span class="pink"> =></span><span class="orange"> b <span class="pink">-</span> a</span><span class="blue">)</span>; <br> <br><span class="blue">alert(</span> arr<span class="blue"> )</span> ;</p>
+            </div>
+            <p>This is preferable, since it uses one less command than the previous way.</p>
         </div>
 </body>
 </html>

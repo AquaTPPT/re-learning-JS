@@ -48,6 +48,7 @@ body {
     margin-top:20px;
     margin-bottom: 20px;
     font-size: 25px;
+    height:34px;
 }
 
 .not-current-page {
@@ -96,3 +97,9 @@ body {
     font-size: 50px;
 }
 
+/* for the topIndex.js only */
+
+.tidiv {
+    border-color:black;
+    background-color:pink;
+}
