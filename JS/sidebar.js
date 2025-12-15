@@ -10,14 +10,15 @@ const sidebarText = document.createElement("div");
 sidebarText.classList.add("sidebar-text");
 sidebarMain.appendChild(sidebarText);
 
-let links = [ 
+const links = [ 
     { name : 'Index', url : './index.html'}, 
     { name : 'Variables', url : './variables.html'},
     { name : 'Functions', url : './functions.html'},
     { name : 'Loops and Arrays', url : './loops.html'},
     { name : 'Hello!', url : './hello.html'},
-    { name : 'Top: Index', url : 'topIndex.html'}
-
+    { name : 'Top: Index', url : 'topIndex.html'},
+    { name : 'Shopping List', url : './shoppingList.html'},
+    { name : 'Display Day and Time', url: './exercise1.html'}
 ];
 
 function sidebarLinks() {

@@ -1,10 +1,9 @@
 // your JavaScript file
 const container = document.querySelector("#container");
-
+container.classList.add("body-text");
 const content = document.createElement("div");
 content.classList.add("blue");
 content.textContent = "This is the glorious text-content!";
-
 container.appendChild(content);
 
 const text = document.createElement("p");
