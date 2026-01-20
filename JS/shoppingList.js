@@ -1,12 +1,9 @@
 
-
-let input = document.querySelector("#item")
-
-let list = [];
-
+const input = document.querySelector("#item");
+const bodySelector = document.querySelector("ul");
 const button = document.querySelector("button").addEventListener("click", function (e) {
     e.preventDefault();
-    list.push(input);
+    let div = document.createElement("li");
+    div.textContent = input.value;
+    bodySelector.appendChild(div)
 });
-
-console.log(list)
